@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>南洋理工官网</title>
+
+  <!-- 页面标题 -->
+  <meta name="apple-mobile-web-app-title" content="南洋理工官网">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- iOS 添加到主屏幕的图标 -->
+  <link rel="apple-touch-icon" href="ntu.png" sizes="180x180">
+
+  <!-- PWA 图标（安卓 & iOS） -->
+  <link rel="icon" type="image/png" href="ntu.png" sizes="192x192">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="data:application/json,{
+    %22name%22:%22%E5%8D%97%E6%B4%8B%E7%90%86%E5%B7%A5%E5%AE%98%E7%BD%91%22,
+    %22short_name%22:%22NTU%22,
+    %22start_url%22:%22.%22,
+    %22display%22:%22standalone%22,
+    %22background_color%22:%22%23ffffff%22,
+    %22theme_color%22:%22%23d71921%22,
+    %22icons%22:[{
+      %22src%22:%22https://www.ntu.edu.sg/favicon-192x192.png%22,
+      %22sizes%22:%22192x192%22,
+      %22type%22:%22image/png%22
+    }]
+  }">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+      font-family: -apple-system, sans-serif;
+    }
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- 内嵌南洋理工官网 -->
+  <iframe src="https://www.ntu.edu.sg/" allow="geolocation; camera; microphone"></iframe>
+
+  <!-- 提示：如果 iframe 被阻止，可替换为自动跳转 -->
+  <!-- <script>window.location.href = "https://www.ntu.edu.sg";</script> -->
+</body>
+</html>
